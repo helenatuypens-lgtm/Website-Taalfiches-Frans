@@ -64,14 +64,15 @@
 
         /* Afbeelding styling */
         .fiche-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            transform: rotate(90deg); /* Dit draait de foto een kwartslag naar rechts */
-        }
+    max-width: 75%; /* Maakt de foto iets kleiner zodat hij minder uitsteekt */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15% auto; /* Creëert een enorme onzichtbare buffer boven en onder de foto */
+    display: block; /* Forceert de foto's om netjes onder elkaar te blijven */
+    border: 1px solid #ddd;
+    transform: rotate(90deg);
+}
 
         .instructie {
             background-color: #fff3cd;

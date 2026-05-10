@@ -47,12 +47,12 @@
             border-bottom: 3px solid #3498db;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            text-align: center;
-        }
+      .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
 
         .tab-content {
             display: none;
@@ -64,14 +64,18 @@
 
         /* Afbeelding styling */
         .fiche-img {
-    max-width: 75%; /* Maakt de foto iets kleiner zodat hij minder uitsteekt */
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 15% auto; /* Creëert een enorme onzichtbare buffer boven en onder de foto */
-    display: block; /* Forceert de foto's om netjes onder elkaar te blijven */
-    border: 1px solid #ddd;
-    transform: rotate(90deg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Maakt de schaduw iets mooier zodat ze loskomen van de achtergrond */
+    
+    margin-top: 0px;       /* Haalt de onnodige ruimte aan de bovenkant weg */
+    margin-bottom: 60px;   /* Zorgt voor een flinke, duidelijke afstand TUSSEN de foto's */
+    
+    display: block;
+    margin-left: auto;     /* Zorgt dat de foto perfect in het midden staat */
+    margin-right: auto;    /* Zorgt dat de foto perfect in het midden staat */
+    border: 1px solid #ccc;
 }
 
         .instructie {

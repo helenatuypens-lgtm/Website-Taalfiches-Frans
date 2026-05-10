@@ -63,23 +63,17 @@
         }
 
         /* Afbeelding styling */
-        .fiche-img {
-    max-width: 85%; /* Iets kleiner gemaakt zodat ze niet buiten het scherm vallen na het draaien */
+       .fiche-img {
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    
-    /* Grote marges om te voorkomen dat de gedraaide foto's elkaar raken */
-    margin-top: 15%;       
-    margin-bottom: 15%;    
-    
+    margin-top: 0px;
+    margin-bottom: 50px; /* Dit zorgt straks voor een perfecte, vaste afstand */
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ccc;
-    
-    /* Hier is hij weer: de draai-code! */
-    transform: rotate(90deg); 
 }
 
         .instructie {

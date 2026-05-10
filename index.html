@@ -64,18 +64,22 @@
 
         /* Afbeelding styling */
         .fiche-img {
-    max-width: 100%;
+    max-width: 85%; /* Iets kleiner gemaakt zodat ze niet buiten het scherm vallen na het draaien */
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Maakt de schaduw iets mooier zodat ze loskomen van de achtergrond */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     
-    margin-top: 0px;       /* Haalt de onnodige ruimte aan de bovenkant weg */
-    margin-bottom: 60px;   /* Zorgt voor een flinke, duidelijke afstand TUSSEN de foto's */
+    /* Grote marges om te voorkomen dat de gedraaide foto's elkaar raken */
+    margin-top: 15%;       
+    margin-bottom: 15%;    
     
     display: block;
-    margin-left: auto;     /* Zorgt dat de foto perfect in het midden staat */
-    margin-right: auto;    /* Zorgt dat de foto perfect in het midden staat */
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #ccc;
+    
+    /* Hier is hij weer: de draai-code! */
+    transform: rotate(90deg); 
 }
 
         .instructie {
